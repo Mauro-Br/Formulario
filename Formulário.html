@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Formulário.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="/path" method="POST">
+        <fieldset>            
+                <div id="c1">
+                    <label for="nome-completo">
+                        Nome Completo:<input id="nome-completo" type="text">
+                    </label>
+                    <label for="cpf">
+                        CPF: <input id="cpf" type="text">
+                    </label>
+                    <label for="e-mail">
+                        E-mail:<input id="e-mail" type="email">
+                    </label>
+                    <label for="web">
+                        WebSite:<input id="web" type="text">
+                    </label>
+                    <label for="endereço">
+                        Endereço:<input id="endereço" type="text">
+                    </label>
+                </div>
+
+                <div class="coluna-separar">
+                    <div id="c2" class="coluna">
+                        <label for="bairro">Bairro: <input id="bairro" type="text">
+                        </label>
+                        <label for="cep">
+                            CEP: <input id="cep" type="text">
+                        </label>
+                        <label for="telefone">
+                            Telefone: <input type="number" name="telefone" id="telefone">
+                        </label>
+                        <label for="celular">
+                            Celular: <input type="number" name="celular" id="celular">
+                        </label>
+                        <label for="data-de-nascimento">
+                            Data de Nascimento: <input id="data-de-nascimento" type="date"></label>
+
+                        <label for="login">
+                            Login: <input type="text" id="login">
+                        </label>
+                    </div>
+
+                    <div id="c3" class="coluna">
+                        <label for="cidade">
+                            Cidade:<input id="cidade" type="text">
+                        </label>
+                        <label for="uf">
+                            UF:<select name="uf" id="uf">
+                                <option value="1">MG</option>
+                                <option value="2">RJ</option>
+                                <option value="3">SP</option>
+                            </select>
+                        </label>
+                        <label for="fax" name="fax">
+                            Fax: <input type="text" name="fax" id="fax">
+                        </label>
+                        <label for="sexo">Sexo:
+                            <input type="radio" name="sexo" id="sexo"> Masculino
+                            <input type="radio" name="sexo" id="sexo"> Feminino
+                        </label>
+                        <label for="estadocivil">Est.Civil:
+                            <select name="estadocivil" id="estadocivil">
+                                <option value="">(ESCOLHA)</option>
+                                <option value="1">Solteiro</option>
+                                <option value="2">Namorando</option>
+                                <option value="3">Casado</option>
+                            </select>
+                        </label>
+                        <label for="senha">
+                            Senha:<input type="password" name="senha" id="senha"></label>
+                    </div>
+                </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
